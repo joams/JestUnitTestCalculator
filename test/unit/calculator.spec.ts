@@ -1,4 +1,4 @@
-import Calculator from '../src/calculator';
+import Calculator from '../../src/calculator';
 describe('Calculator', () => {
   const calculatorInstance = new Calculator();
   describe('add', () => {

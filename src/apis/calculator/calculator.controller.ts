@@ -11,8 +11,11 @@ class CalculatorController {
     response.status(200).send(`add operation ${number1}, ${number2} = ${result}`);
   }
   public subtract(request: Request, response: Response) {
-    const result = calculator.subtract(1, 2);
-    response.status(200).send(`subtract operation 1, 2 = ${result}`);
+    const query: any = request.query;
+    const number1=Number.parseInt(query.number1);
+    const number2=Number.parseInt(query.number2);
+    const result = calculator.subtract(number1, number2);
+    response.status(200).send(`subtract operation ${number1}, ${number2} = ${result}`);
   }
 }
 

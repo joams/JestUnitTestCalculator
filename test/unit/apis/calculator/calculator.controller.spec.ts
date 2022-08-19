@@ -1,5 +1,5 @@
-import Calculator from '../../../src/calculator';
-import CalculatorController from '../../../src/apis/calculator/calculator.controller';
+import Calculator from '../../../../src/calculator';
+import CalculatorController from '../../../../src/apis/calculator/calculator.controller';
 describe('CalculatorController', () => {
   const controller = new CalculatorController();
   test('should add 1,2', () => {
